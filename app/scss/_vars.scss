@@ -12,6 +12,14 @@ $footer-tile:#1f2044;
     background-repeat: no-repeat;
 }
 
+%btn {
+    background-color: $btn-color;
+    text-transform: capitalize;
+    color: #fff;
+
+    @extend %rubik-500;
+}
+
 %rubik-400 {
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
