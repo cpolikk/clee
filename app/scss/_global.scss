@@ -9,7 +9,10 @@ body {
     line-height: 30px;
     display: flex;
     flex-direction: column;
+}
 
+a {
+    color: $footer-link;
 }
 
 .large-container {
@@ -28,6 +31,10 @@ body {
     flex-grow: 1;
 }
 
-a {
-    color: $footer-link;
+.title {
+    @extend %dmsans-700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: $title-color;
+    text-align: center;
 }

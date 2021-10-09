@@ -5,6 +5,9 @@ $light-orange:#fcd7b6;
 $pink:#fef7f0;
 $footer-link:#7b7b7b;
 $footer-tile:#1f2044;
+$bg-color:#fef7f0;
+$title-color: #191919;
+$filter-btn:#8b8b8b;
 
 %img {
     background-position: center center;
@@ -16,7 +19,6 @@ $footer-tile:#1f2044;
     background-color: $btn-color;
     text-transform: capitalize;
     color: #fff;
-
     @extend %rubik-500;
 }
 
