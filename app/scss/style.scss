@@ -148,7 +148,7 @@
     &__form-input {
         border: none;
         background-color: $pink;
-        max-width: 170px;
+        max-width: 168px;
         width: 100%;
         padding: 12px 10px 12px 15px;
 
@@ -592,7 +592,6 @@
 
     &__bottom {
         background-color: $bg-color;
-        padding-bottom: 45px;
     }
 
     &__item-description {
@@ -642,7 +641,7 @@
 
 .partners {
     background-color: $bg-color;
-    padding: 45px 0 90px;
+    padding: 90px 0 90px;
 
     &__list {
         display: flex;
@@ -652,6 +651,62 @@
 
 }
 
+.modal {
+    padding: 115px 0;
+    max-width: 500px;
+    margin: 0 auto;
+    color: $modal;
+
+    &__label {
+        margin-bottom: 30px;
+        display: block;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: left;
+        @extend %rubik-400;
+    }
+
+
+    &__input {
+        display: block;
+        border: 1px solid $border;
+        height: 60px;
+        width: 100%;
+    }
+
+    &__btn {
+        width: 100%;
+        background-color: #a3bbc8;
+        color: #fffefe;
+        border: none;
+        padding: 15px 0;
+        margin-bottom: 30px;
+    }
+
+    &__form-box {
+        border-bottom: 1px solid $border;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    &__link {
+        color: $modal;
+
+    }
+
+    &__link-btn {
+        display: block;
+        border: 1px solid $btn-color;
+        padding: 20px 150px;
+        margin-top: 25px;
+        color: $default-color;
+    }
+}
 
 
 
