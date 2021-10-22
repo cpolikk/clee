@@ -708,6 +708,49 @@
     }
 }
 
+.terms {
+    padding: 116px 0;
+    // color: $default-color;
+
+    &__item {
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        @extend %rubik-500;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        list-style: none;
+        counter-reset: num;
+    }
+
+    &__list-item {
+        counter-increment: num;
+        position: relative;
+        padding: 0;
+        margin-left: 40px;
+
+        &::before {
+            content: counter(num)".";
+            position: absolute;
+            left: -38px;
+        }
+
+        &:nth-child(-n+9)::before {
+            content: "0"counter(num)".";
+        }
+    }
+
+    &__list-item+.terms__list-item {
+        margin-top: 30px;
+    }
+
+}
+
 
 
 
