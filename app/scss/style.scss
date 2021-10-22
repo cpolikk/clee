@@ -751,6 +751,118 @@
 
 }
 
+.mission {
+    padding: 120px 0;
+
+
+    &__inner {
+        background-image: url(../images/about_bg.jpg);
+        background-position: left center;
+        background-size: 46%;
+        background-repeat: no-repeat;
+
+    }
+
+    &__box {
+        max-width: 600px;
+        margin-left: auto;
+        padding: 80px 0;
+    }
+
+    &__top-text {
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        position: relative;
+        padding-left: 140px;
+        margin-bottom: 50px;
+
+        &::before {
+            content: '12';
+            position: absolute;
+            font-size: 140px;
+            @extend %dmsans-700;
+            line-height: 1.2;
+            top: -50px;
+            left: 0px;
+            color: $btn-color;
+        }
+    }
+
+    &__bottom {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-size: 36px;
+        @extend %dmsans-700;
+        margin-bottom: 40px;
+        line-height: 1.2;
+    }
+
+    &__text {
+        @extend %rubik-400;
+        border-bottom: 1px solid #f0f3f6;
+        padding-bottom: 60px;
+        margin-bottom: 26px;
+    }
+
+    &__number {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__number-item {
+        padding: 0 30px 0 68px;
+        border-right: 1px solid #f0f3f6;
+        position: relative;
+
+        &::before {
+            @extend %img;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            top: 0;
+            left: 0;
+
+        }
+
+        &:last-child {
+            border: none;
+            padding-right: 0;
+        }
+    }
+
+    &__number-item--projects::before {
+        background-image: url(../images/icon/about/project.svg);
+    }
+
+    &__number-item--revenue::before {
+        background-image: url(../images/icon/about/revenue.svg);
+    }
+
+    &__number-item--awards::before {
+        background-image: url(../images/icon/about/awards.svg);
+    }
+
+
+    &__number-text {
+        @extend %dmsans-700;
+        line-height: 17px;
+        color: #4c4c4c;
+
+        span {
+            font-size: 36px;
+            line-height: 38px;
+            display: block;
+            color: $default-color;
+        }
+    }
+}
+
 
 
 
