@@ -754,7 +754,6 @@
 .mission {
     padding: 120px 0;
 
-
     &__inner {
         background-image: url(../images/about_bg.jpg);
         background-position: left center;
@@ -863,15 +862,56 @@
     }
 }
 
+.number {
+    background-color: $light-orange;
+    padding: 82px 0;
+    margin-bottom: 120px;
 
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    &__item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
 
+        &::after {
+            content: '';
+            background-color: rgba(22, 93, 131, 0.5);
+            border-radius: 50%;
+            top: 40px;
+            right: 35px;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+        }
+    }
 
+    &__icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 18px;
 
+    }
 
+    &__text {
 
+        font-size: 18px;
+        line-height: 32px;
 
-
+        span {
+            display: block;
+            @extend %dmsans-700;
+            font-size: 36px;
+            line-height: 32px;
+        }
+    }
+}
 
 
 
