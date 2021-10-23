@@ -41,6 +41,25 @@ a {
     text-align: center;
 }
 
+.title-about {
+    font-size: 36px;
+    @extend %dmsans-700;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+.link-arrow {
+    text-transform: capitalize;
+    @extend %dmsans-700;
+    color: #262626;
+
+    &::after {
+        content: '>';
+        padding-left: 20px;
+    }
+}
+
+
 .top {
     background-color: #edf1f4;
     padding: 35px 0 30px;
